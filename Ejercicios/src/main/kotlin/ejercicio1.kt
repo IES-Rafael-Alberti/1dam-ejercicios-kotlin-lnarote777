@@ -64,8 +64,19 @@ fun ej_1_15(){
     catch (e: Exception){
         print("ERROR -- Número inválido")
     }
+}
 
+fun ej_1_18(){
+    println("Escribe tu nombre completo: ")
 
+    val name = readln()
 
+    println(name.lowercase())
+    println(name.uppercase())
+    println(name) //Nose
+}
+
+fun ej_1_20(){
+    print("Introduzca el nº de telefono de la empresa (preijo-teléfono-extensión)")
 
 }
