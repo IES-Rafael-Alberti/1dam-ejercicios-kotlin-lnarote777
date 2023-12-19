@@ -77,6 +77,16 @@ fun ej_1_18(){
 }
 
 fun ej_1_20(){
-    print("Introduzca el nº de telefono de la empresa (preijo-teléfono-extensión)")
+    print("Introduzca el nº de telefono de la empresa (preijo-teléfono-extensión): ")
 
+    val telf = readln().split("-")
+
+    println("El telefono de la empresa es ${telf[1]}")
+}
+
+fun ej_1_21(){
+    println("Introduzca una frase:")
+
+    val frase = readln()
+    println(frase[-1])
 }
