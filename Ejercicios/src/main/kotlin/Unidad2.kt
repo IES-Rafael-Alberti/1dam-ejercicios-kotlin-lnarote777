@@ -301,7 +301,7 @@ fun ej_2_3_2(){
         var suma = ""
 
         if (num < 0){
-            throw IllegalArgumentException ("El número no puede ser negativo")
+            throw IllegalArgumentException ("El número no puede ser negativo.")
         }
 
         for (i in 1..num step 2){
@@ -324,13 +324,52 @@ fun ej_2_3_2(){
 
 
 fun ej_2_3_3(){
+    var num_correcto = false
+    var cuenta = ""
 
+    do {
+        try {
+            print("Introduzca un número: ")
+            val num = readln().toInt()
+
+            if (num < 0){
+                throw IllegalArgumentException("El número no puede ser negativo.")
+            }
+
+
+            for (i in num downTo 0){
+                if (i != 0){
+                    cuenta += "$i, "
+                }else{
+                    cuenta += "$i."
+                }
+            }
+
+            num_correcto = true
+
+        }
+        catch (e: IllegalArgumentException){
+            print("Error - $e")
+        }
+        catch (e: NumberFormatException){
+            print("Error - Caracter inválido, por favor introduzca un número")
+        }
+    }while (!num_correcto)
+
+    println(cuenta)
 }
 
 
 fun ej_2_3_4(){
-
+    try {
+        print("Introduce un número: ")
+        val num = readln().toInt()
+    }catch (e : Exception){
+        print("Error - La entada no es correcta")
+    }
 }
+
+
 
 
 
