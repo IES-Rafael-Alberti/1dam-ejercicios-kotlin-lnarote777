@@ -499,7 +499,7 @@ fun añadir_secundaria(): MutableList<String> {
         if (nombre_pila.lowercase() == "x"){
             break
         }else{
-            nombre_pila.replaceFirstChar{ char -> char.titlecase() }
+            nombre_pila.map { it.titlecase() }
             alumnos_secundaria.add(nombre_pila)
         }
     }
@@ -507,17 +507,17 @@ fun añadir_secundaria(): MutableList<String> {
 }
 fun primariaIncluidosSecundaria(conjunto_primaria: Set<MutableList<String>>, conjunto_secundaria: Set<MutableList<String>>) {
 
-    //val incluidos = conjunto_primaria.isSubsetOf(conjunto_secundaria)
+    val incluidos = conjunto_primaria.containsAll(conjunto_secundaria)
 
-    //println("¿Los nombres de primaria están incluidos en secundaria?: $incluidos")
+    println("¿Los nombres de primaria están incluidos en secundaria?: $incluidos")
 }
 fun alumnosRepetidos(conjunto_primaria: Set<MutableList<String>>, conjunto_secundaria: Set<MutableList<String>>){
     val repetidos = conjunto_primaria.intersect(conjunto_secundaria)
-    print("Nombres que se repiten en los dos cursos: $repetidos")
+    println("Nombres que se repiten en los dos cursos: $repetidos")
 }
 fun alumnosNoRepetidos(conjunto_primaria: Set<MutableList<String>>, conjunto_secundaria: Set<MutableList<String>>) {
     val norepetidos = conjunto_primaria - conjunto_secundaria
-    print("Nombres de primaria que no se repiten en secundaria: $norepetidos")
+    println("Nombres de primaria que no se repiten en secundaria: $norepetidos")
 }
 
 
