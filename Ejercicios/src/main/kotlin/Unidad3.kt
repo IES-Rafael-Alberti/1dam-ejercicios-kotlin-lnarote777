@@ -1,3 +1,4 @@
+import java.util.*
 import kotlin.math.pow
 
 fun ej_3_1_4(){
@@ -499,7 +500,6 @@ fun añadir_secundaria(): MutableList<String> {
         if (nombre_pila.lowercase() == "x"){
             break
         }else{
-            nombre_pila.map { it.titlecase() }
             alumnos_secundaria.add(nombre_pila)
         }
     }

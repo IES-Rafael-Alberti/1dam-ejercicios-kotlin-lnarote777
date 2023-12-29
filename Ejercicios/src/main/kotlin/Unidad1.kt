@@ -82,13 +82,14 @@ fun ej_1_15(){
  * Imprime el nombre introducido en minúsculas, mayúsculas y con mayúsculas la primera letra
  */
 fun ej_1_18(){
-    println("Escribe tu nombre completo: ")
+    print("Escribe tu nombre completo: ")
 
-    val name = readln()
+    val name = readln().split(" ")
 
-    println(name.lowercase())
-    println(name.uppercase())
-    println(name) //Nose
+    println(name.joinToString(" ").lowercase())
+    println(name.joinToString(" ").uppercase())
+    println(name.joinToString { it.capitalize() })
+
 }
 
 
