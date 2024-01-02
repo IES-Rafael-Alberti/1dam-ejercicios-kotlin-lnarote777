@@ -1,5 +1,6 @@
-
-
+/**
+ * Comprueba si la contraseña introducida coincide con la contraseña guardada.
+ */
 fun ej_2_1_2(){
     val contrasena = "contraseña"
 
@@ -14,22 +15,26 @@ fun ej_2_1_2(){
     }
 }
 
-
+/**
+ * División de dos números
+ */
 fun ej_2_1_3(){
-    println("Introduzca dos numeros para dividirlos. Ejemplo(3/2):")
-    val numeros = readln().split("/")
-    val num1 = numeros[0].toInt()
-    val num2 = numeros[1].toInt()
+    try{
+        println("Introduzca dos numeros para dividirlos. Ejemplo(3/2):")
+        val numeros = readln().split("/")
+        val num1 = numeros[0].toInt()
+        val num2 = numeros[1].toInt()
 
-    if (num1 == 0 || num2 == 0 ){
-        print("Error - No se puede dividir por 0")
-    }
-    else{
         print(num1/num2)
+    }
+    catch (e: Exception){
+        print("ERROR - No se puede dividir por cero")
     }
 }
 
-
+/**
+ * Dice a qué grupo perteneces según nombre y sexo
+ */
 fun ej_2_1_6(){
     print("Nombre: ")
     val nombre = readln().uppercase()
@@ -48,7 +53,9 @@ fun ej_2_1_6(){
     }
 }
 
-
+/**
+ * Muestra el nivel del empleado según su puntuación
+ */
 fun ej_2_1_8(){
     print("Introduzca la puntuación del empleado: ")
     val puntos = readln().toDouble()
@@ -74,7 +81,9 @@ fun ej_2_1_8(){
     print("Nivel del empleado $level")
 }
 
-
+/**
+ * Muestra la pizza y los ingredientes elegidos
+ */
 fun ej_2_1_10(){
     print("¿Desea piza vegetariana? (Sí/No): ")
     val pizza = readln().lowercase()
@@ -93,27 +102,36 @@ fun ej_2_1_10(){
     }
 }
 
-
+/**
+ * Muestra todos los años que ha cumplido el usuario desde 1 hasta la edad
+ */
 fun ej_2_2_2(){
-    print("Introduzca su edad: ")
-    val edad = readln().toInt()
+    try {
+        print("Introduzca su edad: ")
+        val edad = readln().toInt()
 
-    var cont = 1
-    var years = ""
+        var cont = 1
+        var years = ""
 
-    for (i in 1..edad ){
-        cont += i
-        if (i != edad){
-            years += "$i, "
+        for (i in 1..edad ){
+            cont += i
+            if (i != edad){
+                years += "$i, "
+            }
+            else {
+                years += "$edad años."
+            }
         }
-        else {
-            years += "$edad años."
-        }
+        print(years)
+    }catch (e: Exception){
+        print("ERROR - Número no válido")
     }
-    print(years)
+
 }
 
-
+/**
+ *Muestra la cuenta atras del número introducido por el usuario
+ */
 fun ej_2_2_4(){
     print("Introduzca un número: ")
     val num = readln().toInt()
@@ -132,7 +150,9 @@ fun ej_2_2_4(){
 }
 
 
-
+/**
+ * Muestra un triángulo de * con la altura introducida por el usuario
+ */
 fun ej_2_2_6(){
     print("Introduce la altura del triángulo: ")
     val num = readln().toInt()
@@ -145,14 +165,18 @@ fun ej_2_2_6(){
     }
 }
 
-
+/**
+ * Muestra la tabla del 10
+ */
 fun ej_2_2_7() {
     for (i in 0.. 10) {
         println("10 x $i = ${10*i}")
     }
 }
 
-
+/**
+ *Da Error
+ */
 fun ej_2_2_8(){
     print("Introduce la altura del triángulo: ")
     val num = readln().toInt()
@@ -165,7 +189,9 @@ fun ej_2_2_8(){
     }
 }
 
-
+/**
+ * Repite lo que introduzca el usuario hasta que se quiera salir
+ */
 fun ej_2_2_13(){
     do {
          print("Introduzca algo ('salir' para terminar): ")
@@ -175,6 +201,9 @@ fun ej_2_2_13(){
 }
 
 
+/**
+ * Pide números hasta que el usuario pare y luego muestra el sumatorio de todos los números que se han introducido
+ */
 fun ej_2_2_15(){
     var suma = 0
     do {
@@ -187,7 +216,9 @@ fun ej_2_2_15(){
 }
 
 
-
+/**
+ * comprueba cuantos números introducidos son pares
+ */
 fun ej_2_2_18(){
     var pares = 0
     var num: Int
@@ -208,6 +239,12 @@ fun ej_2_2_18(){
     print("De los número ingresados, hay $pares que son números pares.")
 }
 
+/**
+ * Suma de los dígitos introducidos por el usuario
+ *
+ * @param num Número introducido por el usuario
+ * @return la suma de todos los dígitos
+ */
 fun suma_digitos(num: Int): Int{
     var suma = 0
     var n = num
@@ -219,6 +256,9 @@ fun suma_digitos(num: Int): Int{
 }
 
 
+/**
+ * Función principal del ejercicio
+ */
 fun  ej_2_2_19(){
 
     while (true) {
@@ -238,20 +278,28 @@ fun  ej_2_2_19(){
         }
     }
 }
-
+/**
+ * Menú del programa
+ */
 fun menu(){
     println("1 - Comenzar programa")
     println("2 - Imprimir listado")
     println("3 - Finalizar programa")
 }
-
+/**
+ * Elegir una opcion del menú
+ *
+ * @return opcion que elige el usuario
+ */
 fun selec_opcion(): Int {
     print("Elija una opción: ")
     val opcion = readln().toInt()
     return opcion
 }
 
-
+/**
+ * Cuenta la cantidad de palabras que hay en la frase y muestra la palabra más larga
+ */
 fun ej_2_2_25(){
     print("Frase: ")
     var frase = readLine()?.trim() ?: ""
@@ -292,7 +340,11 @@ fun ej_2_2_25(){
 }
 
 
-
+/**
+ *Muestra una serie de números impares hasta el número introducido
+ *
+ * @throws IllegalArgumentException Salta cuando el numero es negativo
+ */
 fun ej_2_3_2(){
     print("Introduzca un número entero positivo: ")
 
@@ -322,7 +374,11 @@ fun ej_2_3_2(){
     }
 }
 
-
+/**
+ * Muestra una cuenta atrás desde el número introducido hasta 0
+ *
+ * @throws IllegalArgumentException Salta cuando el número es negativo
+ */
 fun ej_2_3_3(){
     var num_correcto = false
     var cuenta = ""
@@ -359,7 +415,11 @@ fun ej_2_3_3(){
     println(cuenta)
 }
 
-
+/**
+ * Comprueba si el caracter introducido es un entero
+ *
+ * @exception Exception Salta si la entrada no es un número entero
+ */
 fun ej_2_3_4(){
     try {
         print("Introduce un número: ")

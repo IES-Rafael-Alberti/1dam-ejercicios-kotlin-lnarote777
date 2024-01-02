@@ -149,7 +149,7 @@ fun ej_1_24(){
 
 
 /**
- * Detalla la fecha de nacimento introducida.
+ * Detalla la fecha de nacimiento introducida.
  */
 fun ej_1_25(){
     print("¿Cual es su fecha de nacimiento? (dd/mm/aaaa): ")
@@ -165,7 +165,7 @@ fun ej_1_25(){
 
 
 /**
- * Hace una lista de la compra ha partir de una lista separada por comas
+ * Hace una lista de la compra a partir de una lista separada por comas
  */
 fun ej_1_26(){
     println("Introduzca la lista de la compra (separados por coma): ")
@@ -181,7 +181,7 @@ fun ej_1_26(){
 
 
 /**
- *
+ *Muestra por pantalla una línea con los datos que ha introducido el usuario
  */
 fun ej_1_27(){
     print("Nombre del procucto: ")
