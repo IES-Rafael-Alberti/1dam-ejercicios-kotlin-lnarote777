@@ -56,13 +56,13 @@ fun unidad_1(){
                 25 -> ej_1_25()
                 26 -> ej_1_26()
                 27 -> ej_1_27()
-                else -> println("Opción no válida. Vuelva a elegir una opción.")
+                else -> println("**Opción no válida. Vuelva a elegir una opción.**")
             }
         }catch (e: NumberFormatException){
-            println("ERROR - Ingrese un número entero positivo")
+            println("**ERROR - Ingrese un número entero positivo**")
         }
         catch (e: Exception){
-            println("ERROR - $e")
+            println("**ERROR - $e**")
         }
     }
 }
@@ -85,13 +85,13 @@ fun unidad_2(){
                 1 -> condicionales()
                 2 -> iterativas()
                 3 -> excepciones()
-                else -> println("Opción no válida. Vuelva a elegir una opción.")
+                else -> println("**Opción no válida. Vuelva a elegir una opción.**")
             }
         }catch (e: NumberFormatException){
-            println("ERROR - Ingrese un número entero positivo")
+            println("**ERROR - Ingrese un número entero positivo**")
         }
         catch (e: Exception){
-            println("ERROR - $e")
+            println("**ERROR - $e**")
         }
     }
 }
@@ -116,13 +116,13 @@ fun condicionales(){
                 6 -> ej_2_1_6()
                 8 -> ej_2_1_8()
                 10 -> ej_2_1_10()
-                else -> println("Opción no válida. Vuelva a elegir una opción.")
+                else -> println("**Opción no válida. Vuelva a elegir una opción.**")
             }
         }catch (e: NumberFormatException){
-            println("ERROR - Ingrese un número entero positivo")
+            println("**ERROR - Ingrese un número entero positivo**")
         }
         catch (e: Exception){
-            println("ERROR - $e")
+            println("**ERROR - $e**")
         }
     }
 }
@@ -153,13 +153,13 @@ fun iterativas(){
                 19 -> ej_2_2_19()
                 25 -> ej_2_2_25()
 
-                else -> println("Opción no válida. Vuelva a elegir una opción.")
+                else -> println("**Opción no válida. Vuelva a elegir una opción.**")
             }
         }catch (e: NumberFormatException){
-            println("ERROR - Ingrese un número entero positivo")
+            println("**ERROR - Ingrese un número entero positivo**")
         }
         catch (e: Exception){
-            println("ERROR - $e")
+            println("**ERROR - $e**")
         }
     }
 }
@@ -182,13 +182,13 @@ fun excepciones(){
                 2 -> ej_2_3_2()
                 3 -> ej_2_3_3()
                 4 -> ej_2_3_4()
-                else -> println("Opción no válida. Vuelva a elegir una opción.")
+                else -> println("**Opción no válida. Vuelva a elegir una opción.**")
             }
         }catch (e: NumberFormatException){
-            println("ERROR - Ingrese un número entero positivo")
+            println("**ERROR - Ingrese un número entero positivo**")
         }
         catch (e: Exception){
-            println("ERROR - $e")
+            println("**ERROR - $e**")
         }
     }
 }
@@ -209,13 +209,13 @@ fun unidad_3(){
                 1 -> listas()
                 2 -> diccionarios()
                 3 -> conjuntos()
-                else -> println("Opción no válida. Vuelva a elegir una opción.")
+                else -> println("**Opción no válida. Vuelva a elegir una opción.**")
             }
         }catch (e: NumberFormatException){
-            println("ERROR - Ingrese un número entero positivo")
+            println("**ERROR - Ingrese un número entero positivo**")
         }
         catch (e: Exception){
-            println("ERROR - $e")
+            println("**ERROR - $e**")
         }
     }
 }
@@ -242,13 +242,13 @@ fun listas(){
                 9 -> ej_3_1_9()
                 10 -> ej_3_1_10()
                 13 -> ej_3_1_13()
-                else -> println("Opción no válida. Vuelva a elegir una opción.")
+                else -> println("**Opción no válida. Vuelva a elegir una opción.**")
             }
         }catch (e: NumberFormatException){
-            println("ERROR - Ingrese un número entero positivo")
+            println("**ERROR - Ingrese un número entero positivo**")
         }
         catch (e: Exception){
-            println("ERROR - $e")
+            println("**ERROR - $e**")
         }
     }
 }
@@ -276,13 +276,13 @@ fun diccionarios(){
                 8 -> ej_3_2_8()
                 10 -> ej_3_2_10()
                 11 -> ej_3_2_11()
-                else -> println("Opción no válida. Vuelva a elegir una opción.")
+                else -> println("**Opción no válida. Vuelva a elegir una opción.**")
             }
         }catch (e: NumberFormatException){
-            println("ERROR - Ingrese un número entero positivo")
+            println("**ERROR - Ingrese un número entero positivo**")
         }
         catch (e: Exception){
-            println("ERROR - $e")
+            println("**ERROR - $e**")
         }
     }
 }
@@ -309,13 +309,13 @@ fun conjuntos(){
                 4 -> ej_3_3_4()
                 5 -> ej_3_3_5()
                 6 -> ej_3_3_6()
-                else -> println("Opción no válida. Vuelva a elegir una opción.")
+                else -> println("**Opción no válida. Vuelva a elegir una opción.**")
             }
         }catch (e: NumberFormatException){
-            println("ERROR - Ingrese un número entero positivo")
+            println("**ERROR - Ingrese un número entero positivo**")
         }
         catch (e: Exception){
-            println("ERROR - $e")
+            println("**ERROR - $e**")
         }
     }
 }
@@ -340,18 +340,18 @@ fun menu_unidad_1(){
     println()
     println("UNIDAD - 1")
     println("---------------------")
-    println("1 - Ejercicio 4")
-    println("2 - Ejercicio 6")
-    println("3 - Ejercicio 12")
-    println("4 - Ejercicio 15")
-    println("5 - Ejercicio 18")
-    println("6 - Ejercicio 20")
-    println("7 - Ejercicio 21")
-    println("8 - Ejercicio 22")
-    println("9 - Ejercicio 24")
-    println("10 - Ejercicio 25")
-    println("11 - Ejercicio 26")
-    println("12 - Ejercicio 27")
+    println("Ejercicio 4")
+    println("Ejercicio 6")
+    println("Ejercicio 12")
+    println("Ejercicio 15")
+    println("Ejercicio 18")
+    println("Ejercicio 20")
+    println("Ejercicio 21")
+    println("Ejercicio 22")
+    println("Ejercicio 24")
+    println("Ejercicio 25")
+    println("Ejercicio 26")
+    println("Ejercicio 27")
     println("0 - Atrás")
 }
 
@@ -375,11 +375,11 @@ fun menu_condicionales(){
     println()
     println("UNIDAD 2 - CONDICIONALES")
     println("---------------------")
-    println("1 - Ejercicio 2")
-    println("2 - Ejercicio 3")
-    println("3 - Ejercicio 6")
-    println("4 - Ejercicio 8")
-    println("5 - Ejercicio 10")
+    println("Ejercicio 2")
+    println("Ejercicio 3")
+    println("Ejercicio 6")
+    println("Ejercicio 8")
+    println("Ejercicio 10")
     println("0 - Atrás")
 }
 
@@ -390,16 +390,16 @@ fun menu_iterativas(){
     println()
     println("UNIDAD 2 - ITERATIVAS")
     println("---------------------")
-    println("1 - Ejercicio 2")
-    println("2 - Ejercicio 4")
-    println("3 - Ejercicio 6")
-    println("4 - Ejercicio 7")
-    println("5 - Ejercicio 8")
-    println("6 - Ejercicio 13")
-    println("7 - Ejercicio 15")
-    println("8 - Ejercicio 18")
-    println("9 - Ejercicio 19")
-    println("10 - Ejercicio 25")
+    println("Ejercicio 2")
+    println("Ejercicio 4")
+    println("Ejercicio 6")
+    println("Ejercicio 7")
+    println("Ejercicio 8")
+    println("Ejercicio 13")
+    println("Ejercicio 15")
+    println("Ejercicio 18")
+    println("Ejercicio 19")
+    println("Ejercicio 25")
     println("0 - Atrás")
 }
 
@@ -410,9 +410,9 @@ fun menu_excepciones(){
     println()
     println("UNIDAD 2 - EXCEPCIONES")
     println("---------------------")
-    println("1 - Ejercicio 2")
-    println("2 - Ejercicio 3")
-    println("3 - Ejercicio 4")
+    println("Ejercicio 2")
+    println("Ejercicio 3")
+    println("Ejercicio 4")
     println("0 - Atrás")
 }
 
@@ -436,12 +436,12 @@ fun menu_listas(){
     println()
     println("UNIDAD 3 - LISTAS Y TUPLAS")
     println("---------------------")
-    println("1 - Ejercicio 4")
-    println("2 - Ejercicio 6")
-    println("3 - Ejercicio 8")
-    println("4 - Ejercicio 9")
-    println("5 - Ejercicio 10")
-    println("6 - Ejercicio 13")
+    println("Ejercicio 4")
+    println("Ejercicio 6")
+    println("Ejercicio 8")
+    println("Ejercicio 9")
+    println("Ejercicio 10")
+    println("Ejercicio 13")
     println("0 - Atrás")
 }
 
@@ -452,13 +452,13 @@ fun menu_diccionarios(){
     println()
     println("UNIDAD 3 - DICCIONARIOS")
     println("---------------------")
-    println("1 - Ejercicio 3")
-    println("2 - Ejercicio 5")
-    println("3 - Ejercicio 6")
-    println("4 - Ejercicio 7")
-    println("5 - Ejercicio 8")
-    println("6 - Ejercicio 10")
-    println("7 - Ejercicio 11")
+    println("Ejercicio 3")
+    println("Ejercicio 5")
+    println("Ejercicio 6")
+    println("Ejercicio 7")
+    println("Ejercicio 8")
+    println("Ejercicio 10")
+    println("Ejercicio 11")
     println("0 - Atrás")
 }
 
@@ -469,12 +469,12 @@ fun menu_conjuntos() {
     println()
     println("UNIDAD 3 - CONJUNTOS")
     println("---------------------")
-    println("1 - Ejercicio 1")
-    println("2 - Ejercicio 2")
-    println("3 - Ejercicio 3")
-    println("4 - Ejercicio 4")
-    println("5 - Ejercicio 5")
-    println("6 - Ejercicio 6")
+    println("Ejercicio 1")
+    println("Ejercicio 2")
+    println("Ejercicio 3")
+    println("Ejercicio 4")
+    println("Ejercicio 5")
+    println("Ejercicio 6")
     println("0 - Atrás")
 }
 
