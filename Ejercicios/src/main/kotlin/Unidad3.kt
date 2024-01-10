@@ -177,7 +177,7 @@ fun contar_vocales(palabra: List<Char>): MutableList<MutableList<Any>> {
 
 
 /**
- * Ordena la lista de y muestra el precio mayor y el menor
+ * Ordena la lista de precios y muestra el precio mayor y el menor
  */
 fun ej_3_1_10(){
     var precio: MutableList<Int> = mutableListOf(50, 75, 46, 22, 80, 65, 8)

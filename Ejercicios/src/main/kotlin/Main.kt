@@ -239,7 +239,7 @@ fun listas(){
                 4 -> ej_3_1_4()
                 6 -> ej_3_1_6()
                 8 -> ej_3_1_8()
-                9 -> ej_3_1_9()
+                9 -> ej_3_1_9()  //No cuenta las vocales
                 10 -> ej_3_1_10()
                 13 -> ej_3_1_13()
                 else -> println("**Opción no válida. Vuelva a elegir una opción.**")
